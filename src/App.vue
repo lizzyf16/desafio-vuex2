@@ -1,10 +1,20 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <h1 class="text-center">Tienda 32 Bits</h1>
   </nav>
-  <router-view/>
+  <TablaJuegos/>
 </template>
+<script>
+import TablaJuegos from "./components/Tablajuegos.vue";
+export default{
+name: "App",
+components:{
+  TablaJuegos
+}
+}
+
+</script>
+
 
 <style lang="scss">
 #app {
